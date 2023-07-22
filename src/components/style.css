@@ -1,0 +1,131 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: white;
+  }
+  .tableau{
+    position: relative;
+    margin-top: 15vh;
+    padding: 20px;
+    width: 90vw;
+    height: 75vh;
+    margin-left: 10vw;
+    background-color: rgba(5, 3, 94, 0.904);
+    border-radius: 30px;
+  }
+  table td, table tr, table th{
+    color: white;
+  }
+  table thead th{
+    position: sticky;
+    top: 0;
+    background-color: rgba(5, 3, 94) !important;
+  }
+  .scroll-table{
+    margin-top: 20px;
+    height: 300px;
+    overflow-y: scroll;
+  }
+  h1{
+    color: white;
+  }
+  td{
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+ 
+  .formulaire{
+    position: absolute;
+    width: 50%;
+    padding: 20px;
+    top: 20%;
+    left: 25%;
+    z-index: 5 !important;
+    background-color: white;
+    border-radius: 30px;
+    line-height: 2;
+  }
+  .formulaire .add-input{
+    margin-top: 15px;
+  }
+  .formulaire label{
+    display: flex;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .addClass{
+    display:flex;
+    margin-left: 75%;
+    margin-top: 35px;
+    height: 30px;
+    background-color: rgb(12, 155, 12);
+    border-color: rgb(12, 155, 12);
+    transition: color .8s;
+  }
+  .addClass i{
+    display:flex;
+    font-size: 30px;
+    align-items:center;
+    justify-content:center;
+    align-content: center;
+  }
+  .addClass:hover{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(247, 247, 247);
+    color: rgb(12, 155, 12);
+  }
+  .line{
+    transition: .3s ease;
+  }
+  .line:hover{
+    background-color: rgba(212, 212, 228, 0.377);
+    cursor: pointer;
+  }
+  .stat{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    left: 10%;
+    gap: 35px;
+  }
+  .stat h5{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .stat h5 span{
+    color: yellow;
+  }
+  .btnmodif{
+    background-color: green;
+    border-color: green;
+    transition: .5s;
+  }
+  .btnmodif:hover{
+    color: green;
+    background-color: white;
+  }
+  .btndelete{
+    background-color: red;
+    border-color: red;
+    transition: .5s;
+  }
+  .btndelete:hover{
+    color: red;
+    background-color: white;
+  }
+  /* Transition */
+  .edit_form-enter-active, .edit_form-leave-active{
+    transition: transform .5s, opacity .3s;
+  }
+  .edit_form-enter , .edit_form-leave-active{
+    opacity: 0;
+    transform: translateY(-1200px);
+  }
+
+  .newAppear-enter-active, .newAppear-leave-active{
+    transition: opacity .8s;
+  }
+  .newAppear-enter , .newAppear-leave-active{
+    opacity: 0;
+  }
