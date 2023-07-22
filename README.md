@@ -12,3 +12,6 @@ run npm install
 ##### -Rename "backend" into "employer
 ##### -Run the server
 
+
+### 2- Run the Vue project
+##### -run "nmp run dev"
